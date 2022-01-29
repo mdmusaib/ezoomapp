@@ -107,7 +107,7 @@ export default function Login({
       )}
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <img className="h-6 mx-auto" src="/calendso-logo-white-word.svg" alt="Cal.com Logo" />
+        <img className="h-6 mx-auto" src="/logo.png" alt="Cal.com Logo" />
         <h2 className="mt-6 text-3xl font-bold text-center font-cal text-neutral-900">
           {t("sign_in_account")}
         </h2>
