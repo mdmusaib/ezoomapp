@@ -1,4 +1,3 @@
-import { User } from "@prisma/client";
 import dayjs from "dayjs";
 
 export const ONBOARDING_INTRODUCED_AT = dayjs("September 1 2021").toISOString();
@@ -10,6 +9,6 @@ export const ONBOARDING_NEXT_REDIRECT = {
   },
 } as const;
 
-export const shouldShowOnboarding = (user: Pick<User, "createdDate" | "completedOnboarding">) => {
-  return !user.completedOnboarding && dayjs(user.createdDate).isAfter(ONBOARDING_INTRODUCED_AT);
+export const shouldShowOnboarding = () => {
+  return false;
 };

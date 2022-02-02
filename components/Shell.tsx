@@ -78,6 +78,7 @@ function useRedirectToOnboardingIfNeeded() {
   const router = useRouter();
   const query = useMeQuery();
   const user = query.data;
+  console.log("user", user);
 
   const [isRedirectingToOnboarding, setRedirecting] = useState(false);
   useEffect(() => {
