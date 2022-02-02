@@ -105,15 +105,18 @@ export const EmailInput = forwardRef<HTMLInputElement, JSX.IntrinsicElements["in
   ref
 ) {
   return (
-    <input
-      type="email"
-      autoCapitalize="none"
-      autoComplete="email"
-      autoCorrect="off"
-      inputMode="email"
-      ref={ref}
-      {...props}
-    />
+    <>
+      <Label htmlFor="email">email</Label>
+      <input
+        type="email"
+        autoCapitalize="none"
+        autoComplete="email"
+        autoCorrect="off"
+        inputMode="email"
+        ref={ref}
+        {...props}
+      />
+    </>
   );
 });
 

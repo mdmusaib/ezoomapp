@@ -20,6 +20,7 @@ function MyApp(props: AppProps) {
   const { Component, pageProps, err } = props;
   return (
     <AppProviders {...props}>
+      <div id="root" />
       <DefaultSeo {...seoConfig.defaultNextSeo} />
       <I18nLanguageHandler />
       <Component {...pageProps} err={err} />

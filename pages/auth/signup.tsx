@@ -56,7 +56,12 @@ export default function Signup({ email }: Props) {
       method: "POST",
     })
       .then(handleErrors)
-      .then(async () => await signIn("Cal.com", { callbackUrl: (router.query.callbackUrl || "") as string }))
+      .then((res) => {
+        console.log(res);
+      })
+      .then(
+        async () => await signIn("maaz.live", { callbackUrl: (router.query.callbackUrl || "") as string })
+      )
       .catch((err) => {
         methods.setError("apiError", { message: err.message });
       });
@@ -92,6 +97,7 @@ export default function Signup({ email }: Props) {
                   {...register("username")}
                   required
                 />
+
                 <EmailField
                   {...register("email")}
                   className="block w-full px-3 py-2 mt-1 bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-black focus:border-black sm:text-sm"
