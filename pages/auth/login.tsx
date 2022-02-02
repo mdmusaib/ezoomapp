@@ -244,6 +244,7 @@ export default function Login({
               onClick={() => {
                 setShowRegister(true);
               }}
+              style={{ cursor: "pointer" }}
               className="font-medium text-neutral-900">
               {t("create_an_account")}
             </a>
