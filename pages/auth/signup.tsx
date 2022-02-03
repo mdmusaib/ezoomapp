@@ -59,7 +59,7 @@ export default function Signup({ email }: Props) {
       .then((res) => {
         console.log(res);
       })
-      .then(async () => await signIn("maaz.live"))
+      .then(async () => await signIn("Cal.com", { callbackUrl: (router.query.callbackUrl || "") as string }))
       .catch((err) => {
         methods.setError("apiError", { message: err.message });
       });
