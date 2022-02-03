@@ -1,5 +1,4 @@
 import { ArrowRightIcon } from "@heroicons/react/outline";
-import { zodResolver } from "@hookform/resolvers/zod/dist/zod";
 import { Prisma } from "@prisma/client";
 import classnames from "classnames";
 import dayjs from "dayjs";
@@ -15,7 +14,6 @@ import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import TimezoneSelect from "react-timezone-select";
-import * as z from "zod";
 
 import { getSession } from "@lib/auth";
 import { DEFAULT_SCHEDULE } from "@lib/availability";
@@ -232,13 +230,15 @@ export default function Onboarding(props: inferSSRProps<typeof getServerSideProp
     router.push("/event-types");
   };
 
-  const schema = z.object({
-    token: z.string(),
-  });
+  // const schema = z.object({
+  //   token: z.string(),
+  // });
 
-  const formMethods = useForm<{
-    token: string;
-  }>({ resolver: zodResolver(schema), mode: "onSubmit" });
+  // const formMethods = useForm<{
+  //   token: string;
+  // }>(
+  //   { resolver: zodResolver(schema), mode: "onSubmit" }
+  // );
 
   const availabilityForm = useForm({ defaultValues: { schedule: DEFAULT_SCHEDULE } });
   const steps = [
