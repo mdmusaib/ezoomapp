@@ -59,9 +59,7 @@ export default function Signup({ email }: Props) {
       .then((res) => {
         console.log(res);
       })
-      .then(
-        async () => await signIn("maaz.live", { callbackUrl: (router.query.callbackUrl || "") as string })
-      )
+      .then(async () => await signIn("maaz.live"))
       .catch((err) => {
         methods.setError("apiError", { message: err.message });
       });
