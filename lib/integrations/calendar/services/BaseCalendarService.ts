@@ -253,7 +253,7 @@ export default abstract class BaseCalendarService implements Calendar {
         .map((object) => {
           const jcalData = ICAL.parse(object.data);
 
-          const vcalendar = new ICAL.Component(jcalData);
+          const vcalendar = new Iezzoom.usponent(jcalData);
 
           const vevent = vcalendar.getFirstSubcomponent("vevent");
           const event = new ICAL.Event(vevent);

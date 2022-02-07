@@ -32,7 +32,7 @@ export default class OrganizerRequestReminderEmail extends OrganizerScheduledEma
     }
 
     return {
-      from: `Cal.com <${this.getMailerOptions().from}>`,
+      from: `ezzoom.us <${this.getMailerOptions().from}>`,
       to: toAddresses.join(","),
       subject: `${this.calEvent.language("event_awaiting_approval_subject", {
         eventType: this.calEvent.type,
@@ -133,8 +133,8 @@ ${process.env.BASE_URL} + "/bookings/upcoming"
                           <td align="center" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                               <tr>
-                                <td align="center" bgcolor="#292929" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#292929;" valign="middle">
-                                  <p style="display:inline-block;background:#292929;color:#ffffff;font-family:Roboto, Helvetica, sans-serif;font-size:16px;font-weight:500;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;">
+                                <td align="center" bgcolor="#2C4FFF" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#2C4FFF;" valign="middle">
+                                  <p style="display:inline-block;background:#2C4FFF;color:#ffffff;font-family:Roboto, Helvetica, sans-serif;font-size:16px;font-weight:500;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;">
                                     ${this.getManageLink()}
                                   </p>
                                 </td>

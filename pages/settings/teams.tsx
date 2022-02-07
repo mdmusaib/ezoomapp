@@ -46,8 +46,8 @@ export default function Teams() {
             message={
               <>
                 {t("to_upgrade_go_to")}{" "}
-                <a href={"https://cal.com/upgrade"} className="underline">
-                  {"https://cal.com/upgrade"}
+                <a href={"https://ezzoom.us/upgrade"} className="underline">
+                  {"https://ezzoom.us/upgrade"}
                 </a>
               </>
             }

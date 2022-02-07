@@ -76,8 +76,8 @@ function HideBrandingInput(props: { hideBrandingRef: RefObject<HTMLInputElement>
             <p>
               {" "}
               {t("to_upgrade_go_to")}{" "}
-              <a href="https://cal.com/upgrade" className="underline">
-                cal.com/upgrade
+              <a href="https://ezzoom.us/upgrade" className="underline">
+                ezzoom.us/upgrade
               </a>
               .
             </p>

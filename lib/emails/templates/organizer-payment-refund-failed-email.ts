@@ -25,7 +25,7 @@ export default class OrganizerPaymentRefundFailedEmail extends OrganizerSchedule
     }
 
     return {
-      from: `Cal.com <${this.getMailerOptions().from}>`,
+      from: `ezzoom.us <${this.getMailerOptions().from}>`,
       to: toAddresses.join(","),
       subject: `${this.calEvent.language("refund_failed_subject", {
         eventType: this.calEvent.type,
@@ -91,7 +91,7 @@ ${this.getAdditionalNotes()}
                       <tbody>
                         <tr>
                           <td align="center" style="font-size:0px;padding:10px 25px;padding-top:24px;padding-bottom:0px;word-break:break-word;">
-                            <div style="font-family:Roboto, Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:24px;text-align:center;color:#292929;">${this.calEvent.language(
+                            <div style="font-family:Roboto, Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:24px;text-align:center;color:#2C4FFF;">${this.calEvent.language(
                               "a_refund_failed"
                             )}</div>
                           </td>

@@ -249,14 +249,14 @@ const BookingPage = (props: BookingPageProps) => {
         <title>
           {rescheduleUid
             ? t("booking_reschedule_confirmation", {
-                eventTypeTitle: props.eventType.title,
-                profileName: props.profile.name,
-              })
+              eventTypeTitle: props.eventType.title,
+              profileName: props.profile.name,
+            })
             : t("booking_confirmation", {
-                eventTypeTitle: props.eventType.title,
-                profileName: props.profile.name,
-              })}{" "}
-          | Cal.com
+              eventTypeTitle: props.eventType.title,
+              profileName: props.profile.name,
+            })}{" "}
+          | ezzoom.us
         </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>

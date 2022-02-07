@@ -305,7 +305,7 @@ const EventTypesPage = () => {
   return (
     <div>
       <Head>
-        <title>Home | Cal.com</title>
+        <title>Home | ezzoom.us</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Shell
@@ -331,8 +331,8 @@ const EventTypesPage = () => {
                   message={
                     <>
                       {t("to_upgrade_go_to")}{" "}
-                      <a href={"https://cal.com/upgrade"} className="underline">
-                        {"https://cal.com/upgrade"}
+                      <a href={"https://ezzoom.us/upgrade"} className="underline">
+                        {"https://ezzoom.us/upgrade"}
                       </a>
                     </>
                   }

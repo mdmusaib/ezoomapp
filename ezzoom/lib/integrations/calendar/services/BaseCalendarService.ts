@@ -241,9 +241,9 @@ export default abstract class BaseCalendarService implements Calendar {
         timeRange:
           dateFrom && dateTo
             ? {
-                start: dayjs(dateFrom).utc().format(TIMEZONE_FORMAT),
-                end: dayjs(dateTo).utc().format(TIMEZONE_FORMAT),
-              }
+              start: dayjs(dateFrom).utc().format(TIMEZONE_FORMAT),
+              end: dayjs(dateTo).utc().format(TIMEZONE_FORMAT),
+            }
             : undefined,
         headers: this.headers,
       });
@@ -253,7 +253,7 @@ export default abstract class BaseCalendarService implements Calendar {
         .map((object) => {
           const jcalData = ICAL.parse(object.data);
 
-          const vcalendar = new ICAL.Component(jcalData);
+          const vcalendar = new Iezzoom.usponent(jcalData);
 
           const vevent = vcalendar.getFirstSubcomponent("vevent");
           const event = new ICAL.Event(vevent);

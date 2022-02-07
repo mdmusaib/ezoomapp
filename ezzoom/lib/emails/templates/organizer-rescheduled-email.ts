@@ -37,7 +37,7 @@ export default class OrganizerRescheduledEmail extends OrganizerScheduledEmail {
         filename: "event.ics",
         content: this.getiCalEventAsString(),
       },
-      from: `Cal.com <${this.getMailerOptions().from}>`,
+      from: `ezzoom.us <${this.getMailerOptions().from}>`,
       to: toAddresses.join(","),
       subject: `${this.calEvent.language("rescheduled_event_type_subject", {
         eventType: this.calEvent.type,
@@ -89,9 +89,9 @@ ${getCancelLink(this.calEvent)}
       <div style="background-color:#F5F5F5;">
         ${emailSchedulingBodyHeader("calendarCircle")}
         ${emailScheduledBodyHeaderContent(
-          this.calEvent.language("event_has_been_rescheduled"),
-          this.calEvent.language("emailed_you_and_any_other_attendees")
-        )}
+      this.calEvent.language("event_has_been_rescheduled"),
+      this.calEvent.language("emailed_you_and_any_other_attendees")
+    )}
         ${emailSchedulingBodyDivider()}
         <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
         <div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">

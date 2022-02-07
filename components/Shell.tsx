@@ -195,7 +195,7 @@ export default function Shell(props: {
     <>
       <CustomBranding val={user?.brandColor} />
       <HeadSeo
-        title={pageTitle ?? "Cal.com"}
+        title={pageTitle ?? "ezzoom.us"}
         description={props.subtitle ? props.subtitle?.toString() : ""}
         nextSeoProps={{
           nofollow: true,
@@ -393,7 +393,7 @@ function UserDropdown({ small }: { small?: boolean }) {
                   {user?.username || "Nameless User"}
                 </span>
                 <span className="block font-normal truncate text-neutral-500">
-                  {user?.username ? `cal.com/${user.username}` : "No public page"}
+                  {user?.username ? `ezzoom.us/${user.username}` : "No public page"}
                 </span>
               </span>
               <SelectorIcon
@@ -439,7 +439,7 @@ function UserDropdown({ small }: { small?: boolean }) {
         <DropdownMenuSeparator className="h-px bg-gray-200" />
         <DropdownMenuItem>
           <a
-            href="https://cal.com/slack"
+            href="https://ezzoom.us/slack"
             target="_blank"
             rel="noreferrer"
             className="flex px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
@@ -472,7 +472,7 @@ function UserDropdown({ small }: { small?: boolean }) {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://cal.com/roadmap"
+            href="https://ezzoom.us/roadmap"
             className="flex items-center px-4 py-2 text-sm text-gray-700">
             <MapIcon className="w-5 h-5 mr-3 text-gray-500" /> {t("visit_roadmap")}
           </a>

@@ -48,7 +48,7 @@ export default class TeamInviteEmail {
   protected getNodeMailerPayload(): Record<string, unknown> {
     return {
       to: this.teamInviteEvent.to,
-      from: `Cal.com <${this.getMailerOptions().from}>`,
+      from: `ezzoom.us <${this.getMailerOptions().from}>`,
       subject: this.teamInviteEvent.language("user_invited_you", {
         user: this.teamInviteEvent.from,
         team: this.teamInviteEvent.teamName,
@@ -118,12 +118,12 @@ export default class TeamInviteEmail {
                             <div style="font-family:Roboto, Helvetica, sans-serif;font-size:16px;font-weight:500;line-height:1;text-align:left;color:#3E3E3E;">
                               <div style="line-height: 6px;">
                                 <p>${this.teamInviteEvent.language("user_invited_you", {
-                                  user: this.teamInviteEvent.from,
-                                  team: this.teamInviteEvent.teamName,
-                                })}!</p>
+      user: this.teamInviteEvent.from,
+      team: this.teamInviteEvent.teamName,
+    })}!</p>
                                 <p style="font-weight: 400; line-height: 24px;">${this.teamInviteEvent.language(
-                                  "calcom_explained"
-                                )}</p>
+      "calcom_explained"
+    )}</p>
                               </div>
                             </div>
                           </td>
@@ -132,13 +132,12 @@ export default class TeamInviteEmail {
                           <td align="left" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                               <tr>
-                                <td align="center" bgcolor="#292929" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#292929;" valign="middle">
-                                  <p style="display:inline-block;background:#292929;color:#292929;font-family:Roboto, Helvetica, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;">
-                                    <a href="${
-                                      this.teamInviteEvent.joinLink
-                                    }" target="_blank" style="color: #FFFFFF; text-decoration: none">${this.teamInviteEvent.language(
-      "accept_invitation"
-    )} <img src="${linkIcon()}" width="12px"></img></a>
+                                <td align="center" bgcolor="#2C4FFF" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#2C4FFF;" valign="middle">
+                                  <p style="display:inline-block;background:#2C4FFF;color:#2C4FFF;font-family:Roboto, Helvetica, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;">
+                                    <a href="${this.teamInviteEvent.joinLink
+      }" target="_blank" style="color: #FFFFFF; text-decoration: none">${this.teamInviteEvent.language(
+        "accept_invitation"
+      )} <img src="${linkIcon()}" width="12px"></img></a>
                                   </p>
                                 </td>
                               </tr>
@@ -169,10 +168,10 @@ export default class TeamInviteEmail {
                             <div style="font-family:Roboto, Helvetica, sans-serif;font-size:16px;font-weight:500;line-height:1;text-align:left;color:#3E3E3E;">
                               <div style="line-height: 6px;">
                                 <p style="font-weight: 400; line-height: 24px;">${this.teamInviteEvent.language(
-                                  "have_any_questions"
-                                )} <a href="mailto:support@cal.com" style="color: #3E3E3E" target="_blank">${this.teamInviteEvent.language(
-      "contact_our_support_team"
-    )}</a></p>
+        "have_any_questions"
+      )} <a href="mailto:support@ezzoom.us" style="color: #3E3E3E" target="_blank">${this.teamInviteEvent.language(
+        "contact_our_support_team"
+      )}</a></p>
                               </div>
                             </div>
                           </td>

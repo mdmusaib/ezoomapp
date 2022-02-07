@@ -17,7 +17,7 @@ import { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, IS_GOOGLE_LOGIN_ENABLED } from 
 const providers: Provider[] = [
   CredentialsProvider({
     id: "credentials",
-    name: "Cal.com",
+    name: "ezzoom.us",
     type: "credentials",
     credentials: {
       email: { label: "Email Address", type: "email", placeholder: "john.doe@example.com" },

@@ -48,7 +48,7 @@ const AvailableTimes: FC<AvailableTimesProps> = ({
     eventTypeId,
   });
 
-  const [brand, setBrand] = useState("#292929");
+  const [brand, setBrand] = useState("#2C4FFF");
 
   useEffect(() => {
     setBrand(getComputedStyle(document.documentElement).getPropertyValue("--brand-color").trim());

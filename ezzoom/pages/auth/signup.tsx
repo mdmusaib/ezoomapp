@@ -56,7 +56,7 @@ export default function Signup({ email }: Props) {
       method: "POST",
     })
       .then(handleErrors)
-      .then(async () => await signIn("Cal.com", { callbackUrl: (router.query.callbackUrl || "") as string }))
+      .then(async () => await signIn("ezzoom.us", { callbackUrl: (router.query.callbackUrl || "") as string }))
       .catch((err) => {
         methods.setError("apiError", { message: err.message });
       });
@@ -116,14 +116,14 @@ export default function Signup({ email }: Props) {
                 />
               </div>
               <div className="flex space-x-2">
-                <Button loading={isSubmitting} className="justify-center w-7/12">
+                {/* <Button loading={isSubmitting} className="justify-center w-7/12">
                   {t("create_account")}
-                </Button>
+                </Button> */}
                 <Button
                   color="secondary"
                   className="justify-center w-5/12"
                   onClick={() =>
-                    signIn("Cal.com", { callbackUrl: (router.query.callbackUrl || "") as string })
+                    signIn("ezzoom.us", { callbackUrl: (router.query.callbackUrl || "") as string })
                   }>
                   {t("login_instead")}
                 </Button>

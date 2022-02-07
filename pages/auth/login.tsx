@@ -110,7 +110,7 @@ export default function Login({
 
       {!showRegister && (
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-          <img className="h-6 mx-auto" src="/logo.png" alt="Cal.com Logo" />
+          <img className="logo_img mx-auto" src="/logo.png" alt="ezzoom.us Logo" />
           <h2 className="mt-6 text-3xl font-bold text-center font-cal text-neutral-900">
             {t("sign_in_account")}
           </h2>
@@ -123,9 +123,6 @@ export default function Login({
             <form className="space-y-6" onSubmit={handleSubmit}>
               <input name="csrfToken" type="hidden" defaultValue={csrfToken || undefined} hidden />
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-neutral-700">
-                  {t("email_address")}
-                </label>
                 <div className="mt-1">
                   <EmailInput
                     id="email"
@@ -192,7 +189,7 @@ export default function Login({
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-sm shadow-sm bg-neutral-900 hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">
+                  className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-sm shadow-sm login_btn login_btn:hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">
                   {t("sign_in")}
                 </button>
               </div>

@@ -22,14 +22,14 @@ function hexToRGB(hex: string) {
 }
 
 function getContrastingTextColor(bgColor: string | null): string {
-  bgColor = bgColor == "" || bgColor == null ? "#292929" : bgColor;
+  bgColor = bgColor == "" || bgColor == null ? "#2C4FFF" : bgColor;
   const rgb = hexToRGB(bgColor);
   const whiteContrastRatio = computeContrastRatio(rgb, [255, 255, 255]);
-  const blackContrastRatio = computeContrastRatio(rgb, [41, 41, 41]); //#292929
-  return whiteContrastRatio > blackContrastRatio ? "#ffffff" : "#292929";
+  const blackContrastRatio = computeContrastRatio(rgb, [41, 41, 41]); //#2C4FFF
+  return whiteContrastRatio > blackContrastRatio ? "#ffffff" : "#2C4FFF";
 }
 
-const BrandColor = ({ val = "#292929" }: { val: string | undefined | null }) => {
+const BrandColor = ({ val = "#2C4FFF" }: { val: string | undefined | null }) => {
   useEffect(() => {
     document.documentElement.style.setProperty("--brand-color", val);
     document.documentElement.style.setProperty("--brand-text-color", getContrastingTextColor(val));

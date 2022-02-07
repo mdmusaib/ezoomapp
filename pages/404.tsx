@@ -20,19 +20,19 @@ export default function Custom404() {
       title: t("documentation"),
       description: t("documentation_description"),
       icon: DocumentTextIcon,
-      href: "https://docs.cal.com",
+      href: "https://docs.ezzoom.us",
     },
     {
       title: t("api_reference"),
       description: t("api_reference_description"),
       icon: CodeIcon,
-      href: "https://developer.cal.com",
+      href: "https://developer.ezzoom.us",
     },
     {
       title: t("blog"),
       description: t("blog_description"),
       icon: BookOpenIcon,
-      href: "https://cal.com/blog",
+      href: "https://ezzoom.us/blog",
     },
   ];
 
@@ -57,11 +57,11 @@ export default function Custom404() {
             </h1>
             {isSubpage ? (
               <span className="inline-block mt-2 text-lg ">{t("check_spelling_mistakes_or_go_back")}</span>
-            ) : process.env.NEXT_PUBLIC_BASE_URL == "https://app.cal.com" ? (
+            ) : process.env.NEXT_PUBLIC_BASE_URL == "https://app.ezzoom.us" ? (
               <a
-                href={"https://cal.com/signup?username=" + username.replace("/", "")}
+                href={"https://ezzoom.us/signup?username=" + username.replace("/", "")}
                 className="inline-block mt-2 text-lg ">
-                {t("the_username")} <strong className="text-blue-500">cal.com{username}</strong>{" "}
+                {t("the_username")} <strong className="text-blue-500">ezzoom.us{username}</strong>{" "}
                 {t("is_still_available")} <span className="text-blue-500">{t("register_now")}</span>.
               </a>
             ) : (
@@ -79,11 +79,11 @@ export default function Custom404() {
             <h2 className="text-sm font-semibold tracking-wide text-gray-500 uppercase">
               {t("popular_pages")}
             </h2>
-            {!isSubpage && process.env.NEXT_PUBLIC_BASE_URL == "https://app.cal.com" && (
+            {!isSubpage && process.env.NEXT_PUBLIC_BASE_URL == "https://app.ezzoom.us" && (
               <ul role="list" className="mt-4">
                 <li className="px-4 py-2 border-2 border-green-500">
                   <a
-                    href={"https://cal.com/signup?username=" + username.replace("/", "")}
+                    href={"https://ezzoom.us/signup?username=" + username.replace("/", "")}
                     className="relative flex items-start py-6 space-x-4">
                     <div className="flex-shrink-0">
                       <span className="flex items-center justify-center w-12 h-12 rounded-lg bg-green-50">
@@ -136,7 +136,7 @@ export default function Custom404() {
                 </li>
               ))}
               <li className="px-4 py-2">
-                <a href="https://cal.com/slack" className="relative flex items-start py-6 space-x-4">
+                <a href="https://ezzoom.us/slack" className="relative flex items-start py-6 space-x-4">
                   <div className="flex-shrink-0">
                     <span className="flex items-center justify-center w-12 h-12 rounded-lg bg-gray-50">
                       <svg viewBox="0 0 2447.6 2452.5" className="w-6 h-6" xmlns="http://www.w3.org/2000/svg">

@@ -31,7 +31,7 @@ export default class OrganizerCancelledEmail extends OrganizerScheduledEmail {
     }
 
     return {
-      from: `Cal.com <${this.getMailerOptions().from}>`,
+      from: `ezzoom.us <${this.getMailerOptions().from}>`,
       to: toAddresses.join(","),
       subject: `${this.calEvent.language("event_cancelled_subject", {
         eventType: this.calEvent.type,
@@ -81,9 +81,9 @@ ${this.getAdditionalNotes()}
       <div style="background-color:#F5F5F5;">
         ${emailSchedulingBodyHeader("xCircle")}
         ${emailScheduledBodyHeaderContent(
-          this.calEvent.language("event_request_cancelled"),
-          this.calEvent.language("emailed_you_and_any_other_attendees")
-        )}
+      this.calEvent.language("event_request_cancelled"),
+      this.calEvent.language("emailed_you_and_any_other_attendees")
+    )}
         ${emailSchedulingBodyDivider()}
         <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
         <div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
